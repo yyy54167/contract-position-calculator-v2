@@ -44,7 +44,7 @@
               <div class="direction-row"><span>交易方向 <small>根据价格自动判定</small></span><strong id="direction" class="direction" aria-live="polite">等待价格</strong></div>
             </fieldset>
           </form>
-          <div class="input-footer"><span aria-hidden="true">⌁</span> 修改参数，结果即时更新</div>
+          <a class="input-footer" href="#results"><span aria-hidden="true">↗</span> 查看仓位结果</a>
         </section>
 
         <section class="result-column" id="results" aria-labelledby="result-title">
@@ -71,7 +71,6 @@
     </main>
     <footer><span>仓位计算器 <span class="footer-dot">/</span> 为清晰的交易计划而设计</span><span>数据保存在当前设备</span></footer>
   </div>
-  <a href="#results" class="mobile-result" id="mobile-result"><span>所需保证金 <strong id="mobile-margin">—</strong> <small>USDT</small></span><span>查看结果 ↓</span></a>
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
   <script type="module" src="./app.js"></script>
 </body>

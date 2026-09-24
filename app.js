@@ -33,7 +33,7 @@ function showStatus(text, state = '') {
 
 function resetOutputs() {
   plan = null;
-  for (const id of ['margin', 'mobile-margin', 'notional', 'quantity', 'distance', 'usage', 'low-price', 'high-price']) $(id).textContent = '—';
+  for (const id of ['margin', 'notional', 'quantity', 'distance', 'usage', 'low-price', 'high-price']) $(id).textContent = '—';
   $('allocation').style.setProperty('--allocation', '0%');
   $('allocation').classList.remove('over');
   $('direction').className = 'direction';
@@ -84,7 +84,7 @@ function render() {
 
   plan = { input, result };
   showStatus(result.overCapital ? '资金不足' : '已计算', result.overCapital ? 'invalid' : 'ready');
-  $('margin').textContent = $('mobile-margin').textContent = number(result.margin, 4);
+  $('margin').textContent = number(result.margin, 4);
   $('risk-amount').textContent = number(result.stopAmount, 4);
   $('notional').textContent = number(result.notional, 4);
   $('quantity').textContent = number(result.quantity, 8);
@@ -150,11 +150,6 @@ function showTheme() { $('theme-label').textContent = `跟随系统 · ${deviceT
 deviceTheme.addEventListener('change', showTheme);
 showTheme();
 
-if ('IntersectionObserver' in window) {
-  new IntersectionObserver(([entry]) => {
-    $('mobile-result').classList.toggle('out-of-view', entry.isIntersecting);
-  }, { threshold: .2 }).observe($('results'));
-}
 restoreInputs();
 render();
 if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('./sw.js').catch(() => {});
