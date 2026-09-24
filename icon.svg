@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="斜向起飞的火箭">
+  <rect width="512" height="512" rx="112" fill="#10283f"/>
+  <g transform="translate(256 256) scale(1.35) rotate(45) translate(-256 -256)">
+    <path d="M222 366v37m68-37v27" fill="none" stroke="#55cfc4" stroke-width="10" stroke-linecap="round" opacity=".65"/>
+    <path d="M236 328c-10 22-6 43 5 62l15 24 15-24c11-19 15-40 5-62z" fill="#ff9d61"/>
+    <path d="M248 345c-4 14 0 30 8 43 8-13 12-29 8-43z" fill="#ffdc91"/>
+    <path d="M216 257c-28 18-43 45-45 83l50-22zM296 257c28 18 43 45 45 83l-50-22z" fill="#56d0c5"/>
+    <path d="M256 108c-31 27-48 69-48 125v71c13 17 29 29 48 37 19-8 35-20 48-37v-71c0-56-17-98-48-125z" fill="#f5f9fb"/>
+    <path d="M256 108c-16 14-28 31-36 52 24-9 48-9 72 0-8-21-20-38-36-52z" fill="#d6edf3"/>
+    <circle cx="256" cy="220" r="32" fill="#163f5c"/>
+    <circle cx="256" cy="220" r="22" fill="#65d5d4"/>
+    <path d="M222 315c10 9 21 16 34 21 13-5 24-12 34-21l-11 34h-46z" fill="#d6edf3"/>
+  </g>
+</svg>
