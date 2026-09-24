@@ -39,4 +39,4 @@
 
 运行 `node --test tests/*.test.mjs` 检查公式。
 
-静态部署：发布仓库根目录，无构建命令。这个副本没有连接或替换原版 Netlify 站点。
+静态部署：发布仓库根目录，无构建命令。当前 Netlify 生产站点 [ganzhongxue.netlify.app](https://ganzhongxue.netlify.app/) 已连接此仓库的 `main` 分支；推送到该分支会自动更新站点。
